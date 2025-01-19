@@ -1,0 +1,102 @@
+[
+    {
+        "id": 1,
+        "name": "Explore Agra",
+        "title": "Discover the beauty of Taj Mahal and more",
+        "description": "Agra is home to the iconic Taj Mahal, a UNESCO World Heritage Site and a symbol of eternal love. Don't miss Agra Fort and Fatehpur Sikri.",
+        "price": 0,
+        "category": "Free",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Taj_Mahal_in_March_2004.jpg",
+        "button": "Visit Agra"
+    },
+    {
+        "id": 2,
+        "name": "Delhi Adventures",
+        "title": "Dive into the heart of India's capital",
+        "description": "Delhi offers a mix of ancient and modern attractions, including Red Fort, India Gate, Lotus Temple, and vibrant street markets like Chandni Chowk.",
+        "price": 0,
+        "category": "Free",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/a2/India_Gate_in_New_Delhi_03-2016_img3.jpg",
+        "button": "Explore Delhi"
+    },
+    {
+        "id": 3,
+        "name": "Mumbai Escapades",
+        "title": "Unveil the magic of the city of dreams",
+        "description": "Mumbai, the financial capital of India, boasts iconic spots like the Gateway of India, Marine Drive, and Juhu Beach.",
+        "price": 0,
+        "category": "Free",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Gateway_of_India%2C_Mumbai.jpg",
+        "button": "Explore Mumbai"
+    },
+    {
+        "id": 4,
+        "name": "Gwalior Highlights",
+        "title": "Explore forts and cultural heritage",
+        "description": "Gwalior is famous for its majestic Gwalior Fort, intricately designed temples, and historical significance.",
+        "price": 0,
+        "category": "Free",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/8/81/Gwalior_Fort.jpg",
+        "button": "Visit Gwalior"
+    },
+    {
+        "id": 5,
+        "name": "Mathura Serenity",
+        "title": "Experience spirituality at its best",
+        "description": "Mathura, the birthplace of Lord Krishna, is dotted with ancient temples, ghats, and vibrant festivals like Janmashtami.",
+        "price": 0,
+        "category": "Free",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/44/Sri_Krishna_Janmasthan_Mathura.jpg",
+        "button": "Visit Mathura"
+    },
+    {
+        "id": 6,
+        "name": "Jaipur Majesty",
+        "title": "Step into the royal world of the Pink City",
+        "description": "Jaipur, known for its pink-hued buildings, is home to the Amber Fort, Hawa Mahal, and the opulent City Palace.",
+        "price": 0,
+        "category": "Free",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/9/91/Hawa_Mahal_2011.jpg",
+        "button": "Explore Jaipur"
+    },
+    {
+        "id": 7,
+        "name": "Chennai Wonders",
+        "title": "Discover beaches and temples",
+        "description": "Chennai is renowned for its Marina Beach, Kapaleeshwarar Temple, and rich South Indian culture.",
+        "price": 0,
+        "category": "Free",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Marina_Beach_%28cropped%29.jpg",
+        "button": "Visit Chennai"
+    },
+    {
+        "id": 8,
+        "name": "Kolkata Essence",
+        "title": "Experience art, culture, and heritage",
+        "description": "Kolkata, the cultural capital of India, features the Victoria Memorial, Howrah Bridge, and Durga Puja celebrations.",
+        "price": 0,
+        "category": "Free",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Victoria_Memorial%2C_Kolkata.jpg",
+        "button": "Explore Kolkata"
+    },
+    {
+        "id": 9,
+        "name": "Bangalore Spots",
+        "title": "Tech hub meets lush greenery",
+        "description": "Bangalore, known for its IT industry, also offers Lalbagh Botanical Garden and Cubbon Park for nature enthusiasts.",
+        "price": 0,
+        "category": "Free",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Bangalore_Flowershow_at_Lalbagh_2006.JPG",
+        "button": "Visit Bangalore"
+    },
+    {
+        "id": 10,
+        "name": "Hyderabad Heritage",
+        "title": "Taste the flavors and visit Charminar",
+        "description": "Hyderabad blends modernity and tradition with Charminar, Golconda Fort, and delectable Hyderabadi biryani.",
+        "price": 0,
+        "category": "Free",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Charminar_Hyderabad.JPG",
+        "button": "Explore Hyderabad"
+    }
+]

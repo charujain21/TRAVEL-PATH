@@ -1,0 +1,22 @@
+{
+  "name": "travelpath",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/charujain21/travelPath.git"
+  },
+  "author": "charu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/charujain21/travelPath/issues"
+  },
+  "homepage": "https://github.com/charujain21/travelPath#readme",
+  "description": "",
+  "dependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
