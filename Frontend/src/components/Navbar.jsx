@@ -1,19 +1,17 @@
-import React, { useEffect } from "react";
-import { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Login from "./Login";
 import Logout from "./logout";
 import { useAuth } from "../context/AuthProvider";
-import {loadStripe} from '@stripe/stripe-js';
-
+import { loadStripe } from "@stripe/stripe-js";
 
 const Navbar = () => {
   const [authUser, setAuthUser] = useAuth();
-  // console.log(authUser);
 
   const [theme, setTheme] = useState(
     localStorage.getItem("theme") ? localStorage.getItem("theme") : "light"
   );
   const element = document.documentElement;
+
   useEffect(() => {
     if (theme === "dark") {
       element.classList.add("dark");
@@ -37,14 +35,13 @@ const Navbar = () => {
     };
 
     window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const makePayment = async ()=>{
-   const  stripe = await loadStripe("");
-  }
+  const makePayment = async () => {
+    const stripe = await loadStripe("");
+  };
+
   const navItems = (
     <>
       <li>
@@ -59,26 +56,23 @@ const Navbar = () => {
       <li>
         <a href="/Aboutus">About Us</a>
       </li>
-
     </>
   );
+
   return (
     <>
       <div
-        className={`max-w-screen-2xl container mx-auto md:px-20 px-4 fixed top-0 left-0 right-0 bg-gray-800 text-white z-50 ${
+        className={`w-full fixed top-0 left-0 right-0 bg-gray-800 text-white z-50 px-4 md:px-10 ${
           sticky
-            ? "sticky-navbar shadow-md dark:bg-gray-600 dark:text-white duration-300 transition-all ease-in-out"
+            ? "shadow-md dark:bg-gray-600 dark:text-white duration-300 transition-all ease-in-out"
             : ""
         }`}
       >
-        <div className="navbar">
+        {/* Container with max width and centered */}
+        <div className="navbar max-w-screen-xl mx-auto w-full">
           <div className="navbar-start">
             <div className="dropdown">
-              <div
-                tabIndex={0}
-                role="button"
-                className="btn btn-ghost lg:hidden"
-              >
+              <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-5 w-5"
@@ -108,10 +102,10 @@ const Navbar = () => {
               <ul className="menu menu-horizontal px-1">{navItems}</ul>
             </div>
             <div className="hidden md:block">
-              <label className="input input-bordered flex items-center gap-2  dark:bg-slate-900 dark:text-white">
+              <label className="input input-bordered flex items-center gap-2 dark:bg-slate-900 dark:text-white">
                 <input
                   type="text"
-                  className="grow outline-none  text-white"
+                  className="grow outline-none text-white"
                   placeholder="Search"
                 />
                 <svg
@@ -129,13 +123,7 @@ const Navbar = () => {
               </label>
             </div>
             <label className="swap swap-rotate">
-              {/* this hidden checkbox controls the state */}
-              <input
-                type="checkbox"
-                className="theme-controller"
-                value="synthwave"
-              />
-
+              <input type="checkbox" className="theme-controller" value="synthwave" />
               {/* sun icon */}
               <svg
                 className="swap-off h-7 w-7 fill-current"
@@ -160,12 +148,10 @@ const Navbar = () => {
             {authUser ? (
               <Logout />
             ) : (
-              <div className="">
+              <div>
                 <a
                   className="bg-black text-white px-3 py-2 rounded-md hover:bg-slate-800 duration-300 cursor-pointer"
-                  onClick={() =>
-                    document.getElementById("my_modal_3").showModal()
-                  }
+                  onClick={() => document.getElementById("my_modal_3").showModal()}
                 >
                   Login
                 </a>
